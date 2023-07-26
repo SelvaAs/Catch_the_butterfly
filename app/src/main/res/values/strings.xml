@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Catch_the_butterfly</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome</string>
+    <string name="medium_level">MEDIUM LEVEL</string>
+    <string name="easy_level">EASY LEVEL</string>
+    <string name="hard_level">HARD LEVEL</string>
+    <string name="lets_catch_the_butterfly">Lets Catch The Butterfly</string>
+</resources>
