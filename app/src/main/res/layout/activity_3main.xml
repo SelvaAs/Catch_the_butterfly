@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/nature_background_with_sky_312839"
         android:orientation="vertical"
-        tools:context=".MainPage" />
+      />
 
     <LinearLayout
         android:id="@+id/LetsCatch"

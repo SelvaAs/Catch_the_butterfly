@@ -7,4 +7,6 @@
     <string name="easy_level">EASY LEVEL</string>
     <string name="hard_level">HARD LEVEL</string>
     <string name="lets_catch_the_butterfly">Lets Catch The Butterfly</string>
+    <string name="please_enter_your_username">Please Enter Your Username</string>
+    <string name="start">START</string>
 </resources>

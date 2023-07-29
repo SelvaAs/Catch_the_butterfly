@@ -3,8 +3,9 @@ package com.example.catch_the_butterfly;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
-import android.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
@@ -12,12 +13,13 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainPage extends Fragment {
+public class MainPage extends AppCompatActivity {
 
 
     Button buttonEasy;
@@ -27,7 +29,8 @@ public class MainPage extends Fragment {
 
     private SharedPreferences mySharedPreferences;
     private SharedPreferences.Editor editor;
-    RelativeLayout relativeLayout;
+   FrameLayout frameLayout;
+
 
 
     BottomNavigationView bottomNavigationView;
@@ -55,6 +58,7 @@ public class MainPage extends Fragment {
         buttonEasy = findViewById(R.id.buttonEasy);
         buttonMedium = findViewById(R.id.buttonMedium);
         buttonHard = findViewById(R.id.buttonHard);
+        frameLayout = findViewById(R.id.frameLayout);
 
         bottomNavigationView = findViewById(R.id.bottomNavigation);
 
@@ -110,10 +114,17 @@ public class MainPage extends Fragment {
                     break;
 
                 case (R.id.menu_scoreTable):
+                    ScoreTableFragment scoreTableFragment = new ScoreTableFragment(getApplicationContext());
+                    fragment = new Fragment();
+                   getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,scoreTableFragment).commit();
 
-                    fragment=new ScoreTableFragment(getApplicationContext());
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,fragment).commit();
 
+     /*               ScoreTableFragment scoreTableFragment = new ScoreTableFragment(getApplicationContext());
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.add(R.id.frameLayout,scoreTableFragment,"scoreTable");
+                    fragmentTransaction.commit();
+        */            System.out.println("SELVIIIIIIII");
 
                     break;
 
