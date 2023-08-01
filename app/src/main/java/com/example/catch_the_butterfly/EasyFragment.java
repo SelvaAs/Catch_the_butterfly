@@ -67,7 +67,6 @@ public class EasyFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -121,7 +120,6 @@ public class EasyFragment extends Fragment {
             }
 
         }
-
 
         imageView1 = viewGroup.findViewById(R.id.imageView1);
         imageView2 = viewGroup.findViewById(R.id.imageView2);
