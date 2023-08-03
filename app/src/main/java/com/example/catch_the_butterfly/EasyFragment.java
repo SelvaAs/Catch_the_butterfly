@@ -20,7 +20,6 @@ import java.util.Random;
 
 
 public class EasyFragment extends Fragment {
-
     TextView textViewTime;
     TextView textViewScore
     ImageView imageView;
@@ -140,8 +139,6 @@ public class EasyFragment extends Fragment {
 
         showImagesRandom();
 
-
-
         score = 0;
 
         countDownTimer = new CountDownTimer(20000, 1000) {
@@ -151,7 +148,6 @@ public class EasyFragment extends Fragment {
                 textViewTime.setText("Time : " + timeUntilFinished / 1000);
 
             }
-
             @Override
             public void onFinish() {
                 textViewTime.setText("Time off");
