@@ -56,12 +56,10 @@ public class EasyFragment extends Fragment {
     Context context;
     int point = 0;
 
-
     public EasyFragment(Context applicationContext) {
         context = applicationContext;
         // Required empty public constructor
     }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -135,7 +133,6 @@ public class EasyFragment extends Fragment {
         imageView13 = viewGroup.findViewById(R.id.imageView13);
         imageView14 = viewGroup.findViewById(R.id.imageView14);
         imageView15 = viewGroup.findViewById(R.id.imageView15);
-
 
 
         imageArray = new ImageView[]{imageView1, imageView2, imageView3, imageView4, imageView5, imageView6, imageView7,
