@@ -22,8 +22,7 @@ import java.util.Random;
 public class EasyFragment extends Fragment {
 
     TextView textViewTime;
-    TextView textViewScore;
-
+    TextView textViewScore
     ImageView imageView;
 
     int score;
