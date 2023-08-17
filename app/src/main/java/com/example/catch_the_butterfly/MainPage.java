@@ -19,7 +19,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainPage extends AppCompatActivity {
 
-
     Button buttonEasy;
     Button buttonMedium;
     Button buttonHard;
@@ -41,7 +40,6 @@ public class MainPage extends AppCompatActivity {
         setContentView(R.layout.activity_3main);
 
         Welcome = findViewById(R.id.textViewWelcome);
-
 
         mySharedPreferences = getSharedPreferences("MySharedPref", MODE_PRIVATE);
         editor = mySharedPreferences.edit();
