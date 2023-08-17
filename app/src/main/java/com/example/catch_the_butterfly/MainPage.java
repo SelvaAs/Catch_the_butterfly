@@ -30,11 +30,9 @@ public class MainPage extends AppCompatActivity {
    FrameLayout frameLayout;
 
 
-
     BottomNavigationView bottomNavigationView;
     Cursor cursor;
     Fragment fragment;
-
 
 
     @Override
