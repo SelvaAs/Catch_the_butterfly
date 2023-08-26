@@ -23,7 +23,6 @@ public class girisSayfasi extends AppCompatActivity {
         kelebekTikla = findViewById(R.id.kelebekTikla);
         tauch = findViewById(R.id.tauch);
 
-
         Animation alphaAnimation = new AlphaAnimation(1f, 0f);
         alphaAnimation.setDuration(1000); // Bir devir süresi (ms)
         alphaAnimation.setRepeatMode(Animation.REVERSE); // Tekrar modu
@@ -35,7 +34,6 @@ public class girisSayfasi extends AppCompatActivity {
 
         Animation shakeAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake_animation);
         tauch.startAnimation(shakeAnimation);
-
 
         kelebekTikla.setOnClickListener(new View.OnClickListener() {
             @Override
